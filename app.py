@@ -1,11 +1,10 @@
 #importamos la libreria Flask
 from flask import Flask, render_template
-
+#Inicializacion 
 app = Flask(__name__, template_folder='templates')
 
 
 #Ruta de pagina principal
-
 @app.route('/')
 def index():
     return render_template('index.html')
